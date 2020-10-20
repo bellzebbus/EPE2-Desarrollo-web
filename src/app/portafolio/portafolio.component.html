@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylos" href="home.component.css">
+</head>
+<body>
+
+    <div class='img'>
+    
+        <img  src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Simple_raycasting_with_fisheye_correction.gif"
+        
+        width="1200"
+        height="400"
+        title="Imagen referencial de motor raycasting en modo debug">
+        
+        
+    </div>
+    <hr>
+    <br><br><br>
+    <table>
+        <tr>
+            <td>
+                <div class='img'>
+    
+                    <img  src="http://www.hugi.scene.org/online/hugi37/raycasting.jpg"
+                    
+                    width="250 "
+                    height="250"
+                    title="diagrama explicativo del sistema raycasting">
+                    
+                </div>
+            </td>
+            <td >
+                <div class='subtitulo'>
+                    How to compute the intersection points?
+                </div>
+                 <h3>
+                "To compute the intersection point of a ray with an object, you need the formulas of both the ray and the object surface.
+                A ray is a straight line. Lines can be mathematically represented in various ways, one of them being the vector form:
+                P = A + t * (B - A)
+                That means: Any point P is the sum of the coordinates of a point A plus the product of a vector AB and a scalar t.
+                We get the intersection point of a ray with an object by inserting the formulas for x, y and z into the formula that describes the object and solving for t. E.g. for a sphere:
+                |P - C| = r
+                Here C is the center point.
+                Inserting this we get:
+                |A + t * (B - A) - C| = r
+                (A - C)^2 + 2 * t * (A - C) * (B - A) + t^2 * (B - A)^2 = r^2
+                By inserting the coordinates of A, B and C and solving for t (quadratic equation, solvable using the standard formula for quadratic equations) we can compute the coordinates of P.
+                So that's how traditional ray casting works. How about ray marching?"
+
+            </h3>
+            <div class='cita'>
+                Adok. http://www.hugi.scene.org.
+                <a href="http://www.hugi.scene.org/online/hugi37/hugi%2037%20-%20coding%20adok%20on%20ray%20casting,%20ray%20tracing,%20ray%20marching%20and%20the%20like.htm">
+                 fuente</a>
+            </div>
+            </td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <td rowspan = "2">
+                <div class='subtitulo'>
+                    Sphere tracing
+                </div>
+                <h3>
+                "The reason why ray marching is sometimes also called sphere tracing: You can picture the distance between two steps as the radius of a sphere. 
+                Each of these spheres touches at least one object. So you virtually follow the intersection points of these spheres with the ray."
+            </h3>
+            <div class='cita'>
+                Adok. http://www.hugi.scene.org.
+                <a href="http://www.hugi.scene.org/online/hugi37/hugi%2037%20-%20coding%20adok%20on%20ray%20casting,%20ray%20tracing,%20ray%20marching%20and%20the%20like.htm">
+                 fuente</a>
+            </div>
+            </td>
+            <td>
+                <div class='img'>
+    
+                    <img  src="http://www.hugi.scene.org/online/hugi37/sphere_tracing.jpg"
+                    
+                    width="250 "
+                    height="250"
+                    title="diagrama explicativo del sistema raycasting">
+                    
+                </div>
+            </td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <td>
+                <div class='img'>
+    
+                    <img  src="https://thumbs.gfycat.com/KnobbyEasyAfricanelephant-size_restricted.gif"
+                    
+                    width="250 "
+                    height="250"
+                    title="diagrama explicativo del sistema raycasting">
+                    
+                </div>
+            </td>
+            <td >
+                <div class='subtitulo'>
+                    Wolfenstein 3D
+                </div>
+                <h3>
+                    "The world in the famous video game Wolfenstein 3D is built from a square based grid of uniform height walls meeting solid
+                     coloured floors and ceilings. In order to draw the world, a single ray is traced for every column of screen pixels and a 
+                     vertical slice of wall texture is selected and scaled according to where in the world the ray hits a wall and how far it travels before doing so
+                    . The purpose of the grid based levels is twofold – ray to wall collisions can be found more quickly since the potential 
+                    hits become more predictable and memory overhead is reduced. However, encoding wide-open areas takes extra space.""
+                </h3>
+            <div class='cita'>
+                wikipedia. https://en.wikipedia.org/.
+                <a href="https://en.wikipedia.org/wiki/Ray_casting">
+                 fuente</a>
+            </div>
+            </td>
+        </tr>
+    </table>
+    <br><br><br>
+    <hr>
+    <table class="pieDePagina">
+        <tr>
+            <th>
+                <a mat-list-item href="/Home">Home</a>
+            </th>
+            <th>
+                <a mat-list-item href="/portafolio">Portafolio</a>
+            </th>
+            <th>
+                <a mat-list-item href="/servicio">Servicio</a>
+            </th>
+            <th>
+                <a mat-list-item href="/partner">Partner</a>
+            </th>
+            <th>
+                <a mat-list-item href="/contacto">Contacto</a>
+            </th>
+            <th>
+                <a mat-list-item href="/juego">Juego</a>
+            </th>
+        </tr>
+    </table>
+    <br><br><br>
+    <table class="autores">
+        <tr>
+            <th>
+                pagina desarrollada por Sebastian Arias y Sebastian Vergara octubre 2020.
+            </th>
+        </tr>
+    </table>
+    <br><br><br><br>
+    <br><br><br><br><br><br>
+</body>
+</html>
+
+

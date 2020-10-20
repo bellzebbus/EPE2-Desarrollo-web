@@ -1,0 +1,93 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport
+      [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+      [mode]="(isHandset$ | async) ? 'over' : 'side'"
+      [opened]="(isHandset$ | async) === false">
+    <mat-toolbar>szeb</mat-toolbar>
+    <mat-nav-list>
+      <hr>
+      <a mat-list-item href="/Home">Home</a>
+      <a mat-list-item href="/portafolio">Portafolio</a>
+      <a mat-list-item href="/servicio">Servicio</a>
+      <a mat-list-item href="/partner">Partner</a>
+      <a mat-list-item href="/contacto">Contacto</a>
+      <a mat-list-item href="/juego">Juego</a>
+
+
+      <hr>
+      <table class="tabla-gris">
+        <tr>
+          <td>
+            Estamos reclutando!
+          </td>
+        </tr>
+        <tr>
+          <td class="letra-negra">
+              si quieres unirte a nosotros por favor escribenos a este correo Zebbas@outlook.com
+          </td>
+        </tr>
+      </table>
+      
+      <table >
+        <tr>
+          <td class="tabla-rosa">
+              Noticias
+          </td>
+        </tr>
+        <tr class="tabla-gris">
+          <td class="letra-negra">
+            NVIDIA ha lanzado un vídeo de Doom Eternal ejecutándose en una gráfica NVIDIA GeForce RTX 3080 y comparando su rendimiento con el de una GeForce RTX 2080 Ti.
+          </td>
+        </tr>
+      </table>
+      <table>
+        <tr>
+          <td class="tabla-rosa-oscuro">
+            Suscribete para mas noticias!
+          </td>
+        </tr>
+        <tr>
+          <td class="tabla-gris">
+            <input type="email" name="mail" id="mail" title="Ingresa aqui tu mail">
+          </td>
+        </tr>
+      </table>
+
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <button
+        type="button"
+        aria-label="Toggle sidenav"
+        mat-icon-button
+        (click)="drawer.toggle()"
+        *ngIf="isHandset$ | async">
+        <mat-icon aria-label="Side nav toggle icon">ZebbSevv</mat-icon>
+      </button>
+      <span>
+        <table>
+          <tr>
+            <th>
+              Motor Raycasting
+            </th>
+            <th>
+              <form >  <!-- instrucciones post para hacer cosas -->
+
+                  <input type="search" name="buscar" placeholder="buscar...">
+              
+                  <input type="submit" value="Buscar">
+
+              </form>
+            </th>
+          </tr>
+        </table>
+      </span>
+    </mat-toolbar>
+    <!-- Add Content Here -->
+
+    
+
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>

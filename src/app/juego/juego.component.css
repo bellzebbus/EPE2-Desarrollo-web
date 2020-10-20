@@ -1,0 +1,57 @@
+h1 {
+    font-family: monospace;
+    font-size: 400%;
+    color: #c2185b;
+    text-align:center;
+    
+  }
+.subtitulo {
+    font-family: monospace;
+    font-size: 200%;
+    color: #c2185b;
+    text-align:left;
+    margin-left: 2em
+}
+.centrar{
+    margin-left: 20em
+}
+
+h3 {
+    font-family: monospace;
+    font-size: 100%;
+    color: lightgray;
+    text-align:left;
+    margin-left: 2em;
+    margin-right: 2em
+}
+
+.autores{
+    font-family: monospace;
+    font-size: 100%;
+    margin-left: 12em
+}
+
+
+.pieDePagina{
+    text-align: center;
+    font-size: 100%;
+    margin-left: 10em;
+    height: 5em;
+    text-align: center;
+    vertical-align: bottom;
+    font-family: monospace;
+    color: lightgray;
+    width: 50em;
+}
+a{
+    color: #c2185b;
+}
+
+
+hr {
+    height: 5px;
+    background-color: #722343;
+    color: black;
+  }
+
+

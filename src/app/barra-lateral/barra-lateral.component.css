@@ -1,0 +1,89 @@
+.sidenav-container {
+  height: 100%;
+}
+
+.sidenav {
+  width: 200px;
+}
+
+.sidenav .mat-toolbar {
+  background: inherit;
+}
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+h1 {
+  font-family: monospace;
+  font-size: 400%;
+  color: #c2185b;
+  text-align:left;
+  
+  
+}
+
+.subtitulo {
+  font-family: monospace;
+  font-size: 200%;
+  color: #c2185b;
+  text-align:left;
+  
+}
+.tabla-rosa{
+  background-color: #c2185b;
+}
+.tabla-rosa-oscuro{
+  background-color: #722343;
+}
+.tabla-gris{
+  background-color: #525359;
+}
+
+td{
+  text-align: center;
+  vertical-align: bottom;
+  border-bottom: 1px solid #1e1e1e;
+  font-family: monospace;
+  font-size: 100%;
+  color: lightgray;
+ 
+}
+
+.letra-negra{
+  font-family: monospace;
+  font-size: 1em;
+  color: black;
+  
+}
+
+
+h3 {
+  font-family: monospace;
+  font-size: 150%;
+  color: lightgray;
+  text-align:left;
+}
+
+.img{
+
+  text-align:center;    
+}
+
+.video{
+  margin-left: 2em;
+  text-align:left;
+}
+
+
+hr {
+  height: 5px;
+  background-color: #722343;
+  color: black;
+}
+
+form{
+  margin-left: 200mm;
+}
